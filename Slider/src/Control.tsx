@@ -5,9 +5,11 @@ import { ControlProps } from '../types/ControlProps'
 const Control = ({ context, selectedValue }: ControlProps) => {
 	return (
 		<>
-			<Slider defaultValue={context.parameters.inputValue.raw} onChangeComplete={(e: number) => {
-				selectedValue(e);
-			}} />
+			<Slider
+				defaultValue={context.parameters.inputValue.raw}
+				onChangeComplete={(e: number) => {
+					selectedValue(e);
+				}} />
 		</ >
 	)
 }
